@@ -924,6 +924,18 @@ Postman                   LISTO
 Git / GitHub              LISTO
 ```
 
+## Script de base de datos
+
+El proyecto incluye el script SQL completo de PostgreSQL en:
+
+`database/biblioteca_db.sql`
+
+Este archivo permite reconstruir manualmente la estructura de la base de datos utilizada por la aplicación, incluyendo tablas, claves primarias, claves foráneas, restricciones y relaciones.
+
+La aplicación también utiliza JPA e Hibernate para crear y actualizar automáticamente la estructura mediante:
+
+`spring.jpa.hibernate.ddl-auto=update`
+
 ## Conclusión
 
 El proyecto implementa una API REST para la gestión de una biblioteca universitaria utilizando Java, Spring Boot y PostgreSQL.
